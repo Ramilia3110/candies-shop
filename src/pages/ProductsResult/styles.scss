@@ -1,0 +1,45 @@
+.products {
+  background: #ffffdf;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.select {
+  padding-top: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: #8c84ee;
+}
+
+.categories-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #b9ffa9;
+  width: 12rem;
+  height: 3rem;
+
+  border: none;
+}
+
+.productsContent {
+  width: 100%;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-gap: 6rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--first-color-darken);
+}

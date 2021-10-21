@@ -1,0 +1,221 @@
+.hero {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #fe8ec8 13.7%,
+    #ffc2e6 33.75%,
+    #ffc2e6 51.64%,
+    #ffbbe2 71.97%,
+    #ff8fc9 89.75%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__container {
+    height: calc(100vh - var(--header-height));
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__img {
+    width: 50vw;
+    .cat-cake {
+      width: 100%;
+
+      animation: float 3s linear infinite;
+    }
+  }
+  &__data {
+    width: 45rem;
+    padding: 0 0 2rem 8rem;
+    justify-self: right;
+
+    p {
+      font-size: var(--big-font-size);
+      line-height: 1.3;
+      color: var(--first-color);
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+    button {
+      background-color: #fbf883;
+      border: none;
+      text-align: center;
+      width: 18rem;
+      height: 3.5rem;
+      padding: 1rem 0 1rem 0;
+      color: var(--first-color-dark);
+      font-weight: 700;
+      font-size: 1.6rem;
+      border-radius: 0.5rem;
+      &:hover {
+        background-color: rgb(182, 232, 245);
+      }
+    }
+  }
+}
+.candies-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+
+  .elements div {
+    position: absolute;
+    display: block;
+    width: 9rem;
+    height: 9rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .elements div:nth-child(1) {
+    animation: animate 12s linear infinite;
+    animation-delay: -5s;
+    left: 37%;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .elements div:nth-child(2) {
+    animation: animate2 25s linear infinite;
+    animation-delay: -3s;
+    right: 85%;
+    bottom: -25%;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .elements div:nth-child(3) {
+    animation: animate2 20s linear infinite;
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  90% {
+    transform: translateY(-3.5rem);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(120deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  90% {
+    transform: translate(20px) rotate(220deg);
+  }
+  100% {
+    transform: translateX(-20px) rotate(245deg);
+    top: 120%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    opacity: 0;
+    bottom: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(120deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  90% {
+    transform: translate(20px) rotate(220deg);
+  }
+  100% {
+    transform: translateX(-20px) rotate(245deg);
+    bottom: 110%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .candies-container {
+    .elements div {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    background-color: rgb(222, 190, 248);
+    background-image: initial;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__data {
+      order: 2;
+      padding: 0;
+      width: 90%;
+      margin: 0 8% 0 2%;
+      align-self: flex-end;
+      text-align: center;
+
+      p {
+        width: 100%;
+        font-weight: 100;
+        padding-bottom: 1.8rem;
+      }
+    }
+
+    &__img {
+      padding-bottom: 3rem;
+      height: 40rem;
+      width: 50rem;
+    }
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  90% {
+    transform: translateY(-1.5rem);
+  }
+}

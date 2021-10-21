@@ -1,0 +1,89 @@
+.card {
+  position: relative;
+  width: 23rem;
+  height: 32rem;
+
+  .boxImg {
+    width: 100%;
+    height: 23rem;
+
+    img {
+      border-radius: 0.9rem 0.9rem 0 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .boxContent {
+    height: 10rem;
+
+    background: linear-gradient(
+      106.29deg,
+      #a1cfe9 -5.78%,
+      #d9f1ff 29.28%,
+      #d9f1ff 54.42%,
+      #d9f1ff 64.43%,
+      #a1cfe9 101.71%
+    );
+    padding: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 0 0.9rem 0.9rem;
+    h3 {
+      text-align: center;
+      color: var(--first-color-dark);
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    h2 {
+      margin-top: 0.8rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.addToCart {
+  margin-top: 1rem;
+  background: #feff6c;
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  &:hover {
+    background: #6e96e6;
+    color: #fff;
+  }
+}
+
+.card:hover .boxContent {
+  background: linear-gradient(
+    180deg,
+    #ffddfe 0%,
+    #fcefff 33.75%,
+    #fbefff 51.64%,
+    #fbefff 71.97%,
+    #ddc7ee 100%
+  );
+}
+
+.cartBox {
+  position: relative;
+  .shopping-cart {
+    color: #000;
+  }
+  .cartNumber {
+    position: absolute;
+    top: -2px;
+    left: 7px;
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(243, 10, 231);
+  }
+}

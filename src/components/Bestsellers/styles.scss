@@ -1,0 +1,77 @@
+.bestsellers {
+  height: auto;
+  padding: 3rem 0;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #ff97cd 0%,
+    #ffabd7 18.99%,
+    #ffb3da 51.64%,
+    #ffadd8 78.21%,
+    #ff98cd 100%
+  );
+  .flowers div {
+    position: absolute;
+    img {
+      width: 100%;
+    }
+  }
+  .flowers div:nth-child(1) {
+    height: 10rem;
+    width: 10rem;
+    top: 20%;
+    left: 5%;
+  }
+  .flowers div:nth-child(2) {
+    height: 6rem;
+    width: 6rem;
+    bottom: 5%;
+    left: 3%;
+  }
+  .flowers div:nth-child(3) {
+    height: 8rem;
+    width: 8rem;
+    bottom: 25%;
+    right: 5%;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--big-font-size);
+    line-height: 88px;
+    color: #ffffff;
+  }
+  .boxes {
+    min-height: 48rem;
+    width: 74.4%;
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem 0;
+    background: radial-gradient(
+      101.08% 100.83% at 0% 0%,
+      rgba(255, 255, 255, 0.42) 0%,
+      rgba(255, 255, 255, 0.06) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    .box {
+      padding-bottom: 3rem;
+    }
+    .bestseller-lollipop {
+      position: absolute;
+      width: 15rem;
+      height: 20rem;
+      left: -5%;
+      bottom: -5%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

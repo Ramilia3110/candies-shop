@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,500;1,700&display=swap");
+
+:root {
+  --header-height: 5.5rem;
+  --footer-height: 9rem;
+  /*=== Colors===*/
+  --primary-color: #cdc3ff;
+
+  --header-color: #fef;
+  // --header-color: linear-gradient(
+  //   0.5deg,
+  //   #aad2ec -8.76%,
+  //   rgba(201, 234, 254, 0.7) 16.21%,
+  //   rgba(214, 240, 255, 0.55) 44.98%,
+  //   rgba(208, 238, 255, 0.7) 73.7%,
+  //   #b7e1fa 97.13%
+  // );
+  --first-color: #131416;
+  --first-color-dark: #000;
+  --first-color-darken: #484554;
+  /*=== Font and typography a===*/
+  --body-font: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  --big-font-size: 4.5rem;
+  --normal-font-size: 1.8rem;
+
+  --z-fixed: 100;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --normal-font-size: 1.6rem;
+  }
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 300;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

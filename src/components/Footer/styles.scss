@@ -1,0 +1,27 @@
+.footer {
+  height: var(--footer-height);
+  background-color: #91c389;
+  text-align: center;
+
+  .wrap {
+    padding-top: 2.4rem;
+    font-size: 1.6rem;
+  }
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    margin: 1.5rem 1rem 0 1rem;
+  }
+  .icon:hover {
+    transform: scale(1.8);
+    color: #ff90ca;
+  }
+}

@@ -1,0 +1,80 @@
+.about {
+  position: relative;
+  height: fit-content;
+  background-color: #ffffdf;
+  .jumbo {
+    position: relative;
+    height: 40vh;
+  }
+  .article {
+  }
+}
+
+.about-box {
+  padding: 10rem 0;
+}
+.about-box h2 {
+  font-size: var(--big-font-size);
+}
+
+.about-box p {
+  line-height: 3rem;
+}
+
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.about-inner .img {
+  width: 50rem;
+  transform: rotate(-5deg);
+  padding: 16rem 2rem 0 0;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-inner .text {
+  width: 45%;
+  transform: rotate(5deg);
+}
+
+.about-inner .img:nth-child(even) {
+  transform: rotate(5deg);
+}
+.about-inner .text:nth-child(even) {
+  transform: rotate(-5deg);
+}
+
+.about-box .text-inner {
+  position: relative;
+  padding: 0.5rem 2rem 0 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .about-box {
+    padding: 5rem 2rem 3rem 2rem;
+  }
+
+  .about-inner .text {
+    text-align: center;
+    width: 100%;
+    transform: rotate(3deg);
+    order: 1;
+  }
+
+  .about-box .text-inner {
+    padding: 0.5rem;
+  }
+  .about-inner .img {
+    width: 40rem;
+    padding-top: 3rem;
+    transform: rotate(3deg);
+    order: 2;
+  }
+  .about-inner .text:nth-child(even) {
+  }
+}

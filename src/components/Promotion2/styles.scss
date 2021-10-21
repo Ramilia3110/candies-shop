@@ -1,0 +1,47 @@
+.promotion2 {
+  min-height: calc(100vh - var(--header-height));
+  background-color: #c6baff;
+}
+
+.promotion2-container {
+  width: 100%;
+  padding: 7rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promotion2-img {
+  width: 40rem;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.promotion2-text {
+  text-align: center;
+
+  h1 {
+    font-size: 9rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promotion2-text {
+    h1 {
+      font-size: 7rem;
+    }
+    h3 {
+      font-size: 5.5rem;
+    }
+  }
+}
