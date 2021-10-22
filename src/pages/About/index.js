@@ -1,5 +1,4 @@
 import React from "react";
-// import jumbo from "./../../assets/jum.mp4";
 import about1 from "./../../assets/images/about1.jpg";
 import about2 from "./../../assets/images/about2.jpg";
 import about3 from "./../../assets/images/about3.jpg";
@@ -8,24 +7,7 @@ import "./styles.scss";
 const About = () => {
   return (
     <div className="about">
-      <div className="jumbo">
-        {/* <video
-          autoPlay
-          loop
-          muted
-          style={{
-            position: "absolute",
-            width: "100%",
-            left: "50%",
-            top: "50%",
-            height: "100%",
-            objectFit: "cover",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <source src={jumbo} type="video/mp4" />
-        </video> */}
-      </div>
+      <div className="jumbo">gg</div>
       <div className="article">
         <div className="about-box">
           <div className="about-container">
