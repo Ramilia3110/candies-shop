@@ -7,7 +7,7 @@ import "./styles.scss";
 const About = () => {
   return (
     <div className="about">
-      <div className="jumbo">gg</div>
+      <div className="jumbo"></div>
       <div className="article">
         <div className="about-box">
           <div className="about-container">
